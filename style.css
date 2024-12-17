@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Syne+Mono&display=swap');
+
+body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    justify-content: center;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 2em;
+    padding: 20px;
+    width: 96%;
+    z-index: 1;
+}
+
+.top-bar li {
+    font-size: .7em;
+    margin-left: 60px;
+    cursor: pointer;
+}
+
+li:hover {
+    opacity: .5;
+}
+
+.main-title {
+    font-weight: 600;
+}
+
+.mobile-buttons, .desktop-buttons {
+    display: flex;
+    flex-direction: row;
+    right: 0;
+}
+
+.section {
+    display: none;
+    flex-direction: row;
+    margin-top: 30px;
+    width: 80%;
+}
+
+.visible {
+    display: flex;
+}
+
+.container {
+    line-height: 1.6;
+    margin: 10px;
+    width: 50%;
+}
+
+.image-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-container {
+    flex-direction: column;
+}
+
+
+img {
+    max-width: 70%;
+}
+
+.photo-block {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0px;
+}
+
+.photo-block img {
+    max-width: 100%;   
+}
+
+.horizontal-line {
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 40px;
+    margin-top: 36px;
+}
+
+em {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+b {
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+a {
+    color: rgb(0, 110, 210)
+}
+
+.extra-big {
+    font-size: 1.4em;
+}
+
+.mobile-buttons {
+    display: none;
+}
+
+@media screen and (max-width: 1066px) {
+    .section {
+        flex-direction: column;
+    }
+    
+    .main-title {
+        padding-left: 20px;
+    }
+
+    .mobile-buttons {
+        display: flex;
+        font-size: 60px;
+        padding-right: 20px;
+    }
+
+    .mobile-menu {
+        align-items: center;
+        background-color: rgba(255, 255, 255, .75);
+        display: flex;
+        flex-direction: column;
+        font-size: 2em;
+        list-style: none;
+        padding-top: 80px;
+        padding-bottom: 40px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    .mobile-menu li {
+        cursor: pointer;
+        margin: 16px 0 16px 0;
+    }
+    
+    .desktop-buttons {
+        display: none;
+    }
+    
+    .container {
+        width: 100%;
+    }
+}
+
+.nondisplay {
+    display: none;
+}

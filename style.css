@@ -8,6 +8,7 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
     justify-content: center;
+    overflow-x: hidden;
     margin: 0;
 }
 
@@ -61,8 +62,18 @@ li:hover {
 
 .container {
     line-height: 1.6;
+    transition: all .3s;
     margin: 10px;
     width: 50%;
+}
+
+.wide-container {
+    margin-left: 8%;
+    width: 80%;
+}
+
+.narrow-container {
+    width: 1%;
 }
 
 .image-container {
@@ -117,6 +128,10 @@ a {
 
 .mobile-buttons {
     display: none;
+}
+
+.hidden {
+    max-width: 1px;
 }
 
 @media screen and (max-width: 1066px) {

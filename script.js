@@ -14,6 +14,8 @@ const navbarScript = () => {
     const menuButton = document.getElementById("menu-button")
     const mobileMenu = document.getElementById("mobile-menu")
     
+    const shrinkingContainer = document.getElementById("shrinking-container")
+    
     const pages = [
         homepagePage,
         journalismPage,
@@ -50,6 +52,19 @@ const navbarScript = () => {
         pages.forEach(page => {
             page.classList.remove("visible")
         })
+    }
+
+    document.onscroll = () => {
+        const scroll = document.documentElement.scrollTop || document.body.scrollTop
+        if (!shrinkingContainer) {
+            return false
+        }
+        console.log(scroll)
+        if (scroll && scroll > 900) {
+            shrinkingContainer.classList.add("narrow-container")
+        } else {
+            shrinkingContainer.classList.remove("narrow-container")
+        }
     }
 }
 

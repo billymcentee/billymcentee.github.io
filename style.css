@@ -50,10 +50,11 @@ li:hover {
 }
 
 .section {
+    justify-content: center;
     display: none;
     flex-direction: row;
     margin-top: 30px;
-    width: 80%;
+    width: 75%;
 }
 
 .visible {
@@ -68,7 +69,6 @@ li:hover {
 }
 
 .wide-container {
-    margin-left: 8%;
     width: 80%;
 }
 
@@ -79,6 +79,8 @@ li:hover {
 .image-container {
     align-items: center;
     display: flex;
+    font-size: .92em;
+    font-style: italic;
     flex-direction: column;
 }
 
@@ -93,13 +95,74 @@ img {
 
 .photo-block {
     align-items: center;
+}
+
+.photo-block, .photo-carousel-main {
+    align-items: center;
     display: flex;
     flex-direction: column;
     margin: 30px 0px;
 }
 
+.photo-carousel-main {
+    margin-left: 25%;
+}
+
 .photo-block img {
     max-width: 100%;   
+}
+
+.photo-carousel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+}
+
+.circle-container {
+    margin-left: 30px;
+    margin-top: -50px;
+}
+
+.circle {
+    background-color: #e0e0e0;
+    border-radius: 16px;
+    cursor: pointer;
+    height: 18px;
+    margin-bottom: 12px;
+    transition: .1s;
+    width: 18px;
+}
+
+.selected {
+    background-color: #ababab;
+}
+
+.circle:hover {
+    background-color: #ababab;
+}
+
+.photo-carousel-main img {
+    cursor: pointer;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: .2s;
+}
+
+.photo-carousel-main .focus {
+    opacity: 1;
+    z-index: 1;
+}
+
+.photo-carousel-main span {
+    margin-top: 390px;
+}
+
+.photo-carousel-main .extra-space {
+    margin-top: 470px;
 }
 
 .horizontal-line {
@@ -123,7 +186,7 @@ a {
 }
 
 .extra-big {
-    font-size: 1.4em;
+    font-size: 1.35em;
 }
 
 .mobile-buttons {

@@ -2,6 +2,8 @@ const navbarScript = () => {
     const homepageButton = document.getElementById("homepage-button")
     const journalismButton = document.getElementById("journalism-button")
     const theaterButton = document.getElementById("theater-button")
+    const journalismLink = document.getElementById("journalism-link")
+    const theaterLink = document.getElementById("theater-link")
     
     const mobileHomepageButton = document.getElementById("mobile-homepage-button")
     const mobileJournalismButton = document.getElementById("mobile-journalism-button")
@@ -26,13 +28,13 @@ const navbarScript = () => {
         mobileMenu.classList.add("nondisplay")
     }
  
-    journalismButton.onclick = mobileJournalismButton.onclick = () => {
+    journalismButton.onclick = mobileJournalismButton.onclick = journalismLink.onclick = () => {
         clearPages()
         journalismPage.classList.add("visible")
         mobileMenu.classList.add("nondisplay")
     }
  
-    theaterButton.onclick = mobileTheaterButton.onclick = () => {
+    theaterButton.onclick = mobileTheaterButton.onclick = theaterLink.onclick = () => {
         clearPages()
         theaterPage.classList.add("visible")
         mobileMenu.classList.add("nondisplay")

@@ -197,6 +197,10 @@ a {
     max-width: 1px;
 }
 
+#theater-link, #journalism-link {
+    cursor: pointer;
+}
+
 @media screen and (max-width: 1066px) {
     .section {
         flex-direction: column;
